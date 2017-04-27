@@ -1,0 +1,17 @@
+{
+  "name": "new-app",
+  "version": "0.0.0",
+  "description": "Clinic Management Project",
+  "main": "./dist/main.js",
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "element-ui": "^1.2.7",
+    "vue": "^2.1.10",
+    "vue-electron": "^1.0.6",
+    "vue-resource": "^1.0.3",
+    "vue-router": "^2.1.2",
+    "vuex": "^2.1.1"
+  },
+  "devDependencies": {},
+  "author": "Josef Guen <josefguxn@gmail.com>"
+}
