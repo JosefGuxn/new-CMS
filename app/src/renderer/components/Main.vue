@@ -1,21 +1,14 @@
 <template>
-  <div>
+  <div class="main-cnt">
     <header class="header">
-      <el-row>
-        <el-col :span="4">
-          <h1>Clinic</h1>
-        </el-col>
-        <el-col :span="20">
-          <el-menu theme="dark" class="nav-menu" mode="horizontal" router>
-            <el-menu-item class="nav-item" index="/"><span>Quản Lý</span></el-menu-item>
-            <el-menu-item class="nav-item" index="/"><span>Thanh Toán</span></el-menu-item>
-            <el-menu-item class="nav-item" index="/"><span>Thẩm Mỹ</span></el-menu-item>
-            <el-menu-item class="nav-item" index="/main/consultation"><span>Khám Bệnh</span></el-menu-item>
-          </el-menu>
-        </el-col>
-      </el-row>
+      <el-menu theme="dark" class="nav-menu" mode="horizontal" router>
+        <el-menu-item class="nav-item" index="/main/consultation"><span>Khám Bệnh</span></el-menu-item>
+        <el-menu-item class="nav-item" index="/"><span>Thẩm Mỹ</span></el-menu-item>
+        <el-menu-item class="nav-item" index="/"><span>Thanh Toán</span></el-menu-item>
+        <el-menu-item class="nav-item" index="/"><span>Quản Lý</span></el-menu-item>
+      </el-menu>
     </header>
-    <div class="main-cnt">
+    <div class="workspace">
       <router-view></router-view>
     </div>
     <footer class="footer">
@@ -29,28 +22,29 @@
 </script>
 
 <style scoped>
-  .header {
-    height: 80px;
+  .main-cnt {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
-  .el-row {
-    height: 80px;
+  .header {
+    height: 70px;
   }
   .nav-menu {
-    height: 80px;
+    display: flex;
+    justify-content: center;
   }
   .nav-item {
-    height: 80px;
+    height: 100%;
     font-size: 20px;
-    float: right;
   }
   .nav-item span {
-    vertical-align:-10px;
+    vertical-align:-5px;
   }
-  .main-cnt {
-    min-height: 100%;
+  .workspace {   
+    flex: 1;
   }
   .footer {
-    height: 40px;
-    padding: 10px;
+    height: 25px;
   }
 </style>
