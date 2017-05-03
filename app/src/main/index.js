@@ -12,8 +12,9 @@ function createWindow () {
    * Initial window options
    */
   mainWindow = new BrowserWindow({
-    height: 720,
-    width: 1280
+    height: 800,
+    width: 1281,
+    show: false
   })
 
   mainWindow.maximize()
@@ -21,6 +22,10 @@ function createWindow () {
   mainWindow.loadURL(winURL)
 
   mainWindow.setMenu(null)
+
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
+  })
 
   mainWindow.on('closed', () => {
     mainWindow = null
