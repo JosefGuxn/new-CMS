@@ -2,8 +2,8 @@
   <div class="main-cnt">
     <header class="header">
       <el-menu theme="dark" class="nav-menu" mode="horizontal" router>
-        <el-menu-item class="nav-item" index="/main/consultation"><span>Khám Bệnh</span></el-menu-item>
-        <el-menu-item class="nav-item" index="/"><span>Thẩm Mỹ</span></el-menu-item>
+        <el-menu-item class="nav-item" index="/main/clinic"><span>Phòng Khám</span></el-menu-item>
+        <el-menu-item class="nav-item" index="/main/salon"><span>Thẩm Mỹ</span></el-menu-item>
         <el-menu-item class="nav-item" index="/"><span>Thanh Toán</span></el-menu-item>
         <el-menu-item class="nav-item" index="/"><span>Quản Lý</span></el-menu-item>
       </el-menu>

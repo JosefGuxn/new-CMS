@@ -10,8 +10,24 @@ export default [
     component: require('components/Main'),
     children: [
       {
-        path: 'consultation',
-        component: require('components/Consultation')
+        path: 'clinic',
+        component: require('components/Clinic'),
+        children: [
+          {
+            path: 'consultation',
+            component: require('components/Consultation')
+          }
+        ]
+      },
+      {
+        path: 'salon',
+        component: require('components/Salon'),
+        children: [
+          {
+            path: 'consultation',
+            component: require('components/Consultation')
+          }
+        ]
       }
     ]
   },
